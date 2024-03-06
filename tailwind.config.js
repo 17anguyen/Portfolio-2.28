@@ -14,7 +14,7 @@ export default {
         "white-100": "#F5CB8A",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0px 35px 120px -15px #5E4B3A",
       },
       screens: {
         xs: "450px",

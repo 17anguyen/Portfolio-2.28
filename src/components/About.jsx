@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full orange-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full green-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
         options={{
@@ -31,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-[#D8D5D0] text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -41,30 +41,34 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
+      <div className='glass-bg pt-2 pb-2 pl-10 pr-10 rounded-[20px] mx-auto'>
+        {/* top heading */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Alivia</h2>
       </motion.div>
-      <div className='flex flex-wrap'>
-        <img
-          src={user}
-          alt='Profile'
-          className='w-[200px] h-[200px] rounded-full object-contain mx-auto'
-        />
-      </div>
+      {/* card body */}
+        <div className='columns-2 w-full'>
+          {/* body text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto'
+              className=
+              'mt-4 text-secondary text-[17px] leading-[30px]'
       >
-
         I'm a web developer with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
         I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
-      </motion.p>
+        </motion.p>
+          
+          {/* body image */}
+        <Blocks/>
+      </div>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+     <div className='mt-20 flex flex-wrap justify-between p-8'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
+      </div>
+
       </div>
     </>
   );

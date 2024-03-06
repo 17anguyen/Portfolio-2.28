@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 
 import { styles } from "../styles";
 import { TeashopCanvas } from "./canvas";
-import { Blocks } from './canvas';
 
 const Hero = () => {
   const [active, setActive] = useState("");
