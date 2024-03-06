@@ -71,21 +71,21 @@ export const footerLinks = [
 
 const services = [
     {
-        title: "Full-Stack Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
         title: "Front End Design",
         icon: backend,
     },
     {
-        title: "UI Design",
-        icon: creator,
+        title: "Back End Developer",
+        icon: mobile,
     },
+    {
+        title: "Reactive Design Elements",
+        icon: web,
+    },
+    // {
+    //     title: "UI Design",
+    //     icon: creator,
+    // },
 ];
 
 const technologies = [

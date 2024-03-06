@@ -45,10 +45,10 @@ const About = () => {
         {/* top heading */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About Alivia</h2>
+        <h2 className={styles.sectionHeadText}>About Alivia.</h2>
       </motion.div>
       {/* card body */}
-        <div className='columns-2 w-full'>
+        <div className='w-full'>
           {/* body text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -58,12 +58,9 @@ const About = () => {
         I'm a web developer with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
         I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
         </motion.p>
-          
-          {/* body image */}
-        <Blocks/>
       </div>
 
-     <div className='mt-20 flex flex-wrap justify-between p-8'>
+     <div className='m-2 sm:mt-20 flex flex-wrap justify-between p-8'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
