@@ -12,19 +12,21 @@ import HoverVideoPlayer from 'react-hover-video-player';
 const ProjectCard = ({ index, name, description, tags, image, video, source_code_link }) => {
   return (
     <motion.div
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)} >
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450
         }}
-        className='p-5 p-[1px] rounded-[20px] shadow-card sm:w-[360px] w-full orange-pink-gradient'
+        className='p-5 p-[1px] rounded-[20px]  sm:w-[400px] w-full'
       >
-        <div className="bg-tertiary rounded-[20px] py-2 px-2 min-h-[280px]">
+        <div className="glass-bg rounded-[20px] py-2 px-2 min-h-[280px]">
           <div
             className="w-full h-[230px] rounded-2xl">
             <HoverVideoPlayer
+              className="w-full h-full object-cover rounded-2xl overflow-hidden"
               videoSrc={video}
               pausedOverlay={
                 <img
@@ -36,7 +38,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
                     height: '100%',
                     objectFit: 'cover',
                   }}
-                // className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl"
                 />
               }
               loadingOverlay={
@@ -87,20 +89,16 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
           The following Projects showcase my skills and experience through real world examples of my work. Each project is briefly described with links to code repositiories. It reflexts my ability to solve complex problems, work with different technologies, and manage projects effectively. Walk through my gallery of growth as a developer adding technologies to my toolbox!
-          <br className='sm:block hidden' />
-          <br className='sm:block hidden' />
-          <br className='sm:block hidden' />
-          Click on the round icon in the corner of the cards to visit the repositiories for each project!
-        </motion.p>
+        </motion.p> */}
       </div>
-
+      <div dir="ltr" className="w-full flex snap-mandatory snap-x overflow-x-auto mx-auto p-12 pr-20 pl-20 ">
       <div
-        className="mt-20 flex flex-wrap gap-7">
+        className="flex flex-row gap-12 nap-center">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
@@ -109,7 +107,8 @@ const Works = () => {
           />
         ))}
 
-      </div>
+      </div>     
+</div>
 
     </>
   )
