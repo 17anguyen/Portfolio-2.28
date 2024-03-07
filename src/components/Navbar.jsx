@@ -43,7 +43,7 @@ const Navbar = () => {
         >
           <p className='nav-title text-[#7F886A] text-[40px] cursor-pointer flex '>
             Alivia &nbsp;
-            {/* <span className='nav-title sm:block hidden'> Thomas</span> */}
+            <span className='nav-title sm:block hidden'> Thomas</span>
           </p>
         </Link>
 

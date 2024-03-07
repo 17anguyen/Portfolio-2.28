@@ -35,11 +35,9 @@ const Hero = () => {
               D E V E L O P E R
             </span>
           </h1>
-        <div className="mt-2 absolute left-10 pl-8">
           <p className={`${styles.heroSubText} radley-regular-italic`}>
 based in Seattle, Washington
           </p>
-          </div>     
         </Link>
         </div>
         </div>
