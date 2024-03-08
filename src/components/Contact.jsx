@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { TeashopCanvas } from './canvas';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -59,10 +60,10 @@ const Contact = () => {
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75 bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] glass-bg p-8 rounded-2xl'
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
-        <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
+        <h3 className={`${styles.sectionHeadText} text-[#B9C5AD]` }>Contact.</h3>
         <form
           ref={fromRef}
           onSubmit={handleSubmit}
@@ -76,7 +77,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder='What is your name?'
-              className='bg-tertiary py-4 px-6 placeholder:text-[#B095B9] text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-[#B9C5AD] text-white rounded-lg outlined-none border-none font-medium'
             />
           </lable>
           <lable className='flex flex-col'>
@@ -87,7 +88,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder='What is your email?'
-              className='bg-tertiary py-4 px-6 placeholder:text-[#B095B9] text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-[#B9C5AD] text-white rounded-lg outlined-none border-none font-medium'
             />
           </lable>
           <lable className='flex flex-col'>
@@ -98,12 +99,12 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What would you like to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-[#B095B9] text-white rounded-lg outlined-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-[#B9C5AD] text-white rounded-lg outlined-none border-none font-medium'
             />
           </lable>
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-[#B095B9] font-bold shadow-md shadow-primary rounded-xl'
+            className='bg-tertiary py-3 px-8 outline-none w-fit text-[#B9C5AD] font-bold shadow-md shadow-box rounded-xl'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
@@ -114,7 +115,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        {/* add a graphic here */}
       </motion.div>
     </div>
   )

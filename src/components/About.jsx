@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant,slideIn } from '../utils/motion';
 
 import user from '../assets/user.jpg';
 import { Blocks } from './canvas';
@@ -40,25 +40,31 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 const About = () => {
   return (
-    <>
-      <div className='glass-bg pt-2 pb-2 pl-10 pr-10 rounded-[20px] mx-auto'>
-        {/* top heading */}
+    <div className='glass-bg p-8 rounded-[25px]'>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+      <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About Alivia.</h2>
       </motion.div>
       {/* card body */}
-        <div className='w-full'>
+        <div className=' xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
           {/* body text */}
+          <div className='flex-[0.75] p-8'>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-              className=
-              'mt-4 text-secondary text-[17px] leading-[30px]'
+            className=
+              'flex flex-col text-secondary text-[17px] leading-[30px]'
       >
         I'm a web developer with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
         I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
         </motion.p>
-      </div>
+          </div>
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[550px]'
+      >
+        <Blocks/>
+      </motion.div>
+       </div>
 
      <div className='m-2 sm:mt-20 flex flex-wrap justify-between p-8'>
         {services.map((service, index) => (
@@ -66,8 +72,7 @@ const About = () => {
         ))}
       </div>
 
-      </div>
-    </>
+    </div>
   );
 };
 

@@ -15,6 +15,15 @@
   scroll-behavior: smooth;
 }
 
+.monstera-bg{
+ background-image:url('/src/assets/MonsteraLush.png');
+  /* background-image: url('/src/assets/MonsterLush.png'); */
+}
+
+.image-blurred-edge{
+box-shadow: 0 0 8px 10px #A79B8F inset;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
