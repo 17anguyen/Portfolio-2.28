@@ -8,7 +8,6 @@ import { projects } from '../constants';
 import { fadeIn, textVariant } from "../utils/motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
-
 const ProjectCard = ({ index, name, description, tags, image, video, source_code_link }) => {
   return (
     <motion.div
@@ -22,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
         }}
         className='p-5 p-[1px] rounded-[20px]  sm:w-[400px] w-full'
       >
-        <div className="glass-bg rounded-[20px] py-2 px-2 min-h-[280px]">
+        <div className="glass-bg rounded-[20px] py-2 px-2 h-[500px]">
           <div
             className="w-full h-[230px] rounded-2xl">
             <HoverVideoPlayer
@@ -89,16 +88,17 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        {/* <motion.p
+        <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
+          className="glass-bg rounded-[25px] p-8 mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
           The following Projects showcase my skills and experience through real world examples of my work. Each project is briefly described with links to code repositiories. It reflexts my ability to solve complex problems, work with different technologies, and manage projects effectively. Walk through my gallery of growth as a developer adding technologies to my toolbox!
-        </motion.p> */}
+        </motion.p>
       </div>
+
       <div dir="ltr" className="w-full flex snap-mandatory snap-x overflow-x-auto mx-auto p-12 pr-20 pl-20 ">
       <div
-        className="flex flex-row gap-12 nap-center">
+        className="flex flex-row gap-12 nap-center h-[500px]">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
@@ -109,7 +109,6 @@ const Works = () => {
 
       </div>     
 </div>
-
     </>
   )
 }

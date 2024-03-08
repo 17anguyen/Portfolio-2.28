@@ -18,6 +18,7 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.419",
     "framer-motion": "^10.15.0",
+    "gsap": "^3.12.5",
     "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

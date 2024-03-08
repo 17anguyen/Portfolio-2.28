@@ -145,10 +145,59 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Web Designer",
-        company_name: "Freelance",
+        title: "VEX Robotics",
+        company_name: "I started my coding journey in 2014 when VEX robotics was introduced to my school.",
+        // icon: backend,
+        iconBg: "#A79B8F",
+        date: "2014",
+        points: [
+            " There I learned Robot-C as my first language!",
+            "I was responsible for creating autonomous programs",
+            "Programming motors",
+            "Programming LiDar and sonar sensors",
+        ],
+    },
+    {
+        title: "FTC Robotics",
+        company_name: "In 2016 I transferred schools and got the opportunnity to participate in FTC robotics",
+        // icon: backend,
+        iconBg: "#A79B8F",
+        date: "2016",
+        points: [
+            "I added Java to my tool belt!",
+            "I continued writing autonomous programs but now I had a team of 6 and a mentor!",
+            "My first experience creating separate scripts for dual pilot controllers!",
+        ],
+    },
+    {
+        title: "Raspberry Pi",
+        company_name: "Following my graduation in 2017 I wanted to keep my love for programming alive. I bought myself a Raspberry Pi!",
+        // icon: backend,
+        iconBg: "#A79B8F",
+        date: "2017",
+        points: [
+            "I learned how to use a Linux OS",
+            "I made projects such as a RTMP server for my cooking streams",
+            "When Amazon released their Alexa API for developers I made an alexa clone with a smart display with OpenWeather API for a 2 way mirror project I built",
+        ],
+    },
+    {
+        title: "Operations Manager",
+        company_name: "Heli-co",
+        // icon: backend,
+        iconBg: "#A79B8F",
+        date: "November 2018 - April 2021",
+        points: [
+            "Among the hats I wore at this start up I also created and designed our website!",
+            "I was responsible for regularly updating our site with images and updated information to drive traffic",
+            "This is also where I learned about SEO",
+        ],
+    },
+    {
+        title: "Web Developer",
+        company_name: "In my out of office time I leveraged my web design skills to create a business designing sites for clients!",
         icon: backend,
-        iconBg: "#383E56",
+        iconBg: "#A79B8F",
         date: "January 2020 - Present",
         points: [
             "Developing and maintaining web applications clients needs.",
@@ -161,7 +210,7 @@ const experiences = [
         title: "Full-Stack Web Developer Certificaiton",
         company_name: "University of Washington",
         icon: meta,
-        iconBg: "#E6DEDD",
+        iconBg: "#A79B8F",
         date: "June 2023",
         points: [
             "Develop a responsive,  user-friendly, intuitive, and secure full-stack website from with interactive features to cross-browser optimize traffic and user experience  using React, Node.js, and Express.",
@@ -258,42 +307,6 @@ const projects = [
         source_code_link: "https://github.com/17anguyen/notPictionary#tech",
     },
     {
-        name: "One By Faith",
-        description:
-            "Web-based platform that allows users to search, book, and manage individual spiritual services online and in person as well as group events, providing a convenient and efficient solution to manage scheduling and take payment.",
-        tags: [
-            {
-                name: "Square",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "AcuityScheduling",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: obfPoster,
-        video: onebyfaith,
-        source_code_link: "https://www.onebyfaith.co/",
-    },
-    {
-        name: "Zombie Ghost Games",
-        description:
-            "This is a web applicaiton built for a client in need of an ecommerse site to display his card games and provide the consumer with information.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mySQL",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: zombiePoster,
-        video: zombie,
-        source_code_link: "https://zombieghostgames.com/",
-    },
-    {
         name: "ChinguTalk",
         description:
             "A social media application with with account creation and modificaiton. Users are logged into a database based on shared interests and interests can be searched to find friends! The deployed link is disabled due to heroku hosting costs.",
@@ -342,6 +355,39 @@ const projects = [
         source_code_link: "https://github.com/17anguyen/event-planner",
     },
     {
+        name: "One By Faith",
+        description:
+            "Web-based platform that allows users to search, book, and manage individual spiritual services online and in person as well as group events, providing a convenient and efficient solution to manage scheduling and take payment.",
+        tags: [
+            {
+                name: "Square",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "AcuityScheduling",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: obfPoster,
+        video: onebyfaith,
+        source_code_link: "https://www.onebyfaith.co/",
+    },
+    {
+        name: "Zombie Ghost Games",
+        description:
+            "This is a web applicaiton built for a client in need of an ecommerse site to display his card games and provide the consumer with information.",
+        tags: [
+            {
+                name: "Shopify",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: zombiePoster,
+        video: zombie,
+        source_code_link: "https://zombieghostgames.com/",
+    },
+
+    {
         name: "Helico",
         description:
             "In my time as a start up operations manager I created this site for client aquisition, driving traffic, communicating information, and allowing scheduling",
@@ -351,7 +397,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "HTML",
+                name: "Square",
                 color: "pink-text-gradient",
             },
         ],
@@ -362,3 +408,4 @@ const projects = [
 ];
 
 export { services, technologies, experiences, testimonials, projects };
+// Hi Livvy <3 you're really cute and I love you. Thank you for being in my life and I am so thankful that we have each other to work together like this. I'm really looking forward to watching you grow

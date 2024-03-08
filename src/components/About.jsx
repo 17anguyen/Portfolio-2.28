@@ -53,9 +53,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
             className=
               'flex flex-col text-secondary text-[17px] leading-[30px]'
-      >
+          >
         I'm a web developer with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
-        I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
+            I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
+            <br/>
+            <br/>
+            I have been in Operations Management since 2018 successfully growing a start up and managing the Fortune 500 company Enterprise Holdings at one of their largest US locations.
+            I returned to school in March 2023 finishing in June 2023 with a Full Stack Web Development Certificate from the University of Washington.
+            <br />
+            <br />
+            Enthusiastic, results-driven client services professional with strong background in quality assurance, directly interfacing with industry customers. Well-versed in products, services, and consumer trends. Dependable achiever committed to holding highest ethical standards and maintaining customer trust.
         </motion.p>
           </div>
       <motion.div

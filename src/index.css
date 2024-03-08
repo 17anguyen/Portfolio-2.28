@@ -13,6 +13,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  --scrollbarBG: #A79B8F;
+  --thumbBG: #7F886A;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
 .monstera-bg{
@@ -23,6 +27,7 @@
 .image-blurred-edge{
 box-shadow: 0 0 8px 10px #A79B8F inset;
 }
+
 
 .hash-span {
   margin-top: -100px;
