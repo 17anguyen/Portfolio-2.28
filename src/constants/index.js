@@ -16,7 +16,10 @@ import {
     git,
     figma,
     docker,
-    meta,
+    UW,
+    VEX,
+    FTC,
+    Rasp,
     threejs,
     chingu,
     DoodleDash,
@@ -147,7 +150,7 @@ const experiences = [
     {
         title: "VEX Robotics",
         company_name: "I started my coding journey in 2014 when VEX robotics was introduced to my school.",
-        // icon: backend,
+        icon: VEX,
         iconBg: "#A79B8F",
         date: "2014",
         points: [
@@ -160,7 +163,7 @@ const experiences = [
     {
         title: "FTC Robotics",
         company_name: "In 2016 I transferred schools and got the opportunnity to participate in FTC robotics",
-        // icon: backend,
+        icon: FTC,
         iconBg: "#A79B8F",
         date: "2016",
         points: [
@@ -172,7 +175,7 @@ const experiences = [
     {
         title: "Raspberry Pi",
         company_name: "Following my graduation in 2017 I wanted to keep my love for programming alive. I bought myself a Raspberry Pi!",
-        // icon: backend,
+        icon: Rasp,
         iconBg: "#A79B8F",
         date: "2017",
         points: [
@@ -184,7 +187,7 @@ const experiences = [
     {
         title: "Operations Manager",
         company_name: "Heli-co",
-        // icon: backend,
+        icon: mobile,
         iconBg: "#A79B8F",
         date: "November 2018 - April 2021",
         points: [
@@ -209,7 +212,7 @@ const experiences = [
     {
         title: "Full-Stack Web Developer Certificaiton",
         company_name: "University of Washington",
-        icon: meta,
+        icon: UW,
         iconBg: "#A79B8F",
         date: "June 2023",
         points: [

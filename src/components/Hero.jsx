@@ -18,13 +18,8 @@ const Hero = () => {
           </p>
           </div>
         <div className="w-full text-center relative">
-                  <Link
-          to='/'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-          >
+
+          <a href='#work'>
           <h1 className={`${styles.heroHeadText}
           fxnow-font hero-head-text text-transparent
           `}>
@@ -34,10 +29,10 @@ const Hero = () => {
               D E V E L O P E R
             </span>
           </h1>
+            </a>
           <p className={`${styles.heroSubText} radley-regular-italic`}>
 based in Seattle, Washington
           </p>
-        </Link>
         </div>
         </div>
       {/* slider */}

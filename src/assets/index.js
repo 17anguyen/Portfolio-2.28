@@ -21,14 +21,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import sql from "./tech/sql.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import FTC from "./company/FTClogo.jpg";
+import VEX from "./company/VEXlogo.jpg";
+import UW from "./company/UW.png";
+import Rasp from "./company/raspberryPi.png";
 
 import chingu from "./usage/chingu.mp4";
 import DoodleDash from "./usage/DoodleDash.mp4";
@@ -78,13 +74,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  UW,
+  VEX,
+  FTC,
+  Rasp,
   sql,
   chingu,
   DoodleDash,
