@@ -6,7 +6,6 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant,slideIn } from '../utils/motion';
 
-import user from '../assets/user.jpg';
 import { Blocks } from './canvas';
 
 import { SectionWrapper } from '../hoc'
