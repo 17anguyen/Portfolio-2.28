@@ -23,7 +23,7 @@ const Hero = () => {
 
           <a href='#work'>
           <h1 className={`${styles.heroHeadText}
-          fxnow-font hero-head-text text-transparent
+          fxnow-font hero-head-text text-transparent hover::
           `}>
             F U L L  S T A C K
             <br/>

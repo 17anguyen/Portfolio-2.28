@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pots and vase with flowers
+* source:	https://sketchfab.com/3d-models/pots-and-vase-with-flowers-80187f09dc43403ca8916d3618149579
+* author:	Naira (https://sketchfab.com/naira001)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pots and vase with flowers" (https://sketchfab.com/3d-models/pots-and-vase-with-flowers-80187f09dc43403ca8916d3618149579) by Naira (https://sketchfab.com/naira001) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
