@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import portraitImage from '../assets/portraitImage.png';
+// import portraitImage from '../assets/portraitImage.png';
+import portraitImage2 from '../assets/portrait2.png';
 
 
 import { styles } from "../styles";
@@ -36,15 +37,15 @@ const Hero = () => {
 based in Seattle, Washington
           </p>
         </div>
-        <div className="absolute w-[120%] h-[100%] 
-      ml-[-150px] bottom-12 left-0
+      </div>
+        <div className="relative w-[120%] h-[100%] 
       ">
         <img
-          src={portraitImage}
-          className='mx-auto'
+          // src={portraitImage}
+          src={portraitImage2}
+          className='mx-auto w-[20%] h-[50%] absolute bottom-0  ml-[10px] z-10'
           loading="lazy"
         />
-      </div>
       </div>
       {/* slider */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
