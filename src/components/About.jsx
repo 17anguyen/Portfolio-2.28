@@ -53,7 +53,7 @@ const About = () => {
             className=
               'flex flex-col text-secondary text-[17px] leading-[30px]'
           >
-        I'm a web developer with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
+        I'm a web developer based in Seattle, Washington with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
             I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
             <br/>
             <br/>
