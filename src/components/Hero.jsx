@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import portraitImage from '../assets/portraitImage.png';
+// import portraitImage from '../assets/portrait2.png';
+// import portraitImage from '../assets/portrait3.png';
+// import portraitImage from '../assets/portrait4.png';
 
 
 import { styles } from "../styles";
@@ -19,12 +22,11 @@ const Hero = () => {
             Hi, I'm <span className='radley-regular-italic text-[#7F886A]'>Alivia</span> and I am a
           </p>
           </div>
-        <div className="hero-title w-full text-center relative">
+        <div className="hero-title w-full text-center relative hover:z-50">
 
           <a href='#work'>
           <h1 className={`${styles.heroHeadText}
-          fxnow-font hero-head-text text-transparent hover::
-          `}>
+          fxnow-font hero-head-text text-transparent hover::`}>
             F U L L  S T A C K
             <br/>
             <span className='fxnow-font'>
@@ -32,19 +34,14 @@ const Hero = () => {
             </span>
           </h1>
             </a>
-          <p className={`${styles.heroSubText} radley-regular-italic`}>
-based in Seattle, Washington
-          </p>
         </div>
-        <div className="absolute w-[120%] h-[100%] 
-      ml-[-150px] bottom-12 left-0
-      ">
+      </div>
+        <div className="absolute xs:bottom-0 bottom-0 w-full flex justify-center items-center">
         <img
           src={portraitImage}
           className='mx-auto'
           loading="lazy"
         />
-      </div>
       </div>
       {/* slider */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

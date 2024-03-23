@@ -52,14 +52,14 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-[#5E4B3A]"
-                } hover:text-white text-[20px] font-medium cursor-pointer underline underline-offset-8`}
+              className={`${active === nav.title ? "text-white underline underline-offset-8" : "text-[#5E4B3A]"
+                } hover:text-white text-[20px] font-medium cursor-pointer hover:underline underline-offset-8`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li className="text-[#5E4B3A] hover:text-white text-[20px] font-medium cursor-pointer underline underline-offset-8">
+          <li className="text-[#5E4B3A] hover:text-white text-[20px] font-medium cursor-pointer hover:underline underline-offset-8">
             <a href={pdf} download={pdf}>Resume</a>
           </li>
         </ul>
@@ -80,8 +80,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-[#7F886A]"
-                    }`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-[#7F886A]"}`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
