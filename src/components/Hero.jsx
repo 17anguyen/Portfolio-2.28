@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 // import portraitImage from '../assets/portraitImage.png';
-import portraitImage2 from '../assets/portrait2.png';
+import portraitImage2 from '../assets/portrait2.jpeg';
 
 
 import { styles } from "../styles";
