@@ -38,12 +38,12 @@ based in Seattle, Washington
           </p>
         </div>
       </div>
-        <div className="relative w-[120%] h-[100%] 
+        <div className="relative w-[100%] h-[50%] 
       ">
         <img
           // src={portraitImage}
           src={portraitImage2}
-          className='mx-auto w-[20%] h-[50%] absolute bottom-0  ml-[10px] z-10'
+          className='mx-auto'
           loading="lazy"
         />
       </div>
