@@ -21,7 +21,9 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
         }}
         className='p-5 p-[1px] rounded-[20px]  sm:w-[400px] w-full'
       >
-        <div className="glass-bg rounded-[20px] py-2 px-2 h-[500px]">
+        <div className="glass-bg rounded-[20px] py-2 px-2 h-[500px]"
+          onClick={() => window.open
+                  (source_code_link, "_blank")}>
           <div
             className="w-full h-[230px] rounded-2xl">
             <HoverVideoPlayer
@@ -48,8 +50,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
             />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
-                onClick={() => window.open
-                  (source_code_link, "_blank")}
+     
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
