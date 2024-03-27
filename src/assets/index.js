@@ -21,8 +21,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import sql from "./tech/sql.png";
 
-import FTC from "./company/FTClogo.jpg";
-import VEX from "./company/VEXlogo.jpg";
+import FTC from "./company/FTClogo.png";
+import VEX from "./company/VEXlogo.png";
 import UW from "./company/UW.png";
 import Rasp from "./company/raspberryPi.png";
 
