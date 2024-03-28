@@ -1,5 +1,5 @@
 import { Tilt } from "react-tilt";
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { github } from '../assets';
@@ -51,7 +51,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
 
-                className="glass-bg w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                className="github-card glass-bg w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
                   src={github}
@@ -83,18 +83,17 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div>
         <p className={styles.sectionSubText}>My Projects</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <p
           className="glass-bg rounded-[25px] p-8 mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
           The following Projects showcase my skills and experience through real world examples of my work. Each project is briefly described with links to code repositiories. It reflexts my ability to solve complex problems, work with different technologies, and manage projects effectively. Walk through my gallery of growth as a developer adding technologies to my toolbox!
-        </motion.p>
+        </p>
       </div>
 
       <div dir="ltr" className="works-scroll">
