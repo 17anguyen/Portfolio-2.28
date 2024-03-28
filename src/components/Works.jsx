@@ -51,7 +51,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
 
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                className="glass-bg w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
                   src={github}
@@ -97,9 +97,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div dir="ltr" className="w-full flex snap-mandatory snap-x overflow-x-auto mx-auto p-12 pr-20 pl-20 ">
+      <div dir="ltr" className="lg:snap-mandatory snap-x overflow-x-auto w-full flex  mx-auto p-12 pr-20 pl-20 ">
         <div
-          className="flex flex-row gap-12 nap-center h-[500px]">
+          className="flex flex-row gap-12 nap-center h-[500px] w-[500px]">
           {projects.map((project, index) => (
             <ProjectCard
               key={`project-${index}`}
