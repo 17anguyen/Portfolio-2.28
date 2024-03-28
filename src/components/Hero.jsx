@@ -21,22 +21,22 @@ const Hero = () => {
           <p className={`${styles.heroSubText} radley-regular-italic text-[#5E4B3A] text-center`}>
             Hi, I'm <span className='radley-regular-italic text-[#7F886A]'>Alivia</span> and I am a
           </p>
-          </div>
+        </div>
         <div className="hero-title w-full text-center relative hover:z-50">
 
           <a href='#work'>
-          <h1 className={`${styles.heroHeadText}
+            <h1 className={`${styles.heroHeadText}
           fxnow-font hero-head-text text-transparent hover::`}>
-            F U L L  S T A C K
-            <br/>
-            <span className='fxnow-font'>
-              D E V E L O P E R
-            </span>
-          </h1>
-            </a>
+              F U L L  S T A C K
+              <br />
+              <span className='fxnow-font'>
+                D E V E L O P E R
+              </span>
+            </h1>
+          </a>
         </div>
       </div>
-        <div className="absolute xs:bottom-0 bottom-0 w-full flex justify-center items-center">
+      <div className="hero-image absolute xs:bottom-0 bottom-0 w-full flex justify-center items-center">
         <img
           src={portraitImage}
           className='mx-auto'

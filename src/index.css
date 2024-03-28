@@ -19,13 +19,27 @@
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-.monstera-bg{
- background-image:url('/src/assets/MonsteraLush.png');
+@media only screen and (max-width: 1026px) {
+  .hero-image {
+    display: none;
+  }
+
+  .ui-graphic {
+    display: none;
+  }
+
+  .computer-graphic {
+    display: none;
+  }
+}
+
+.monstera-bg {
+  background-image: url('/src/assets/MonsteraLush.png');
   /* background-image: url('/src/assets/MonsterLush.png'); */
 }
 
-.image-blurred-edge{
-box-shadow: 0 0 8px 10px #A79B8F inset;
+.image-blurred-edge {
+  box-shadow: 0 0 8px 10px #A79B8F inset;
 }
 
 
@@ -36,34 +50,37 @@ box-shadow: 0 0 8px 10px #A79B8F inset;
 }
 
 .nav-title {
-  font-family: 'Breathing Personal Use', sans-serif;                                     
+  font-family: 'Breathing Personal Use', sans-serif;
 }
 
 .breathing-font {
-    font-family: 'Breathing Personal Use', sans-serif;
+  font-family: 'Breathing Personal Use', sans-serif;
 }
 
 .fxnow-font {
- font-family: 'FX Logo', sans-serif;
+  font-family: 'FX Logo', sans-serif;
 }
+
 :hover.fxnow-font {
-text-shadow: 0 0 3px transparent, 0 0 20px #F6F3EE;
-cursor: pointer;
+  text-shadow: 0 0 3px transparent, 0 0 20px #F6F3EE;
+  cursor: pointer;
   -webkit-text-stroke: 2px #5E4B3A;
 }
+
 .hero-head-text {
   -webkit-text-stroke: 2px #7F886A;
 }
 
 .glass-bg {
   /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.41);
-    /* border-radius: 16px; */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.41);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .radley-regular {
   font-family: "Radley", serif;
   font-weight: 400;
@@ -94,6 +111,7 @@ cursor: pointer;
   background: linear-gradient(90.13deg, #E7F1DC 1.9%, #667444 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #E7F1DC 1.9%, #667444 97.5%);
 }
+
 .orange-text-gradient {
   background: #f12711;
   /* fallback for old browsers */
