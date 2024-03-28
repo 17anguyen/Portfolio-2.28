@@ -63,7 +63,7 @@ const Contact = () => {
         className='flex-[0.75] glass-bg p-8 rounded-2xl'
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
-        <h3 className={`${styles.sectionHeadText} text-[#B9C5AD]` }>Contact.</h3>
+        <h3 className={`${styles.sectionHeadText} text-[#B9C5AD]`}>Contact.</h3>
         <form
           ref={fromRef}
           onSubmit={handleSubmit}
@@ -113,11 +113,11 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='computer-graphic xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         {/* add a graphic */}
         {/* <FlowersCanvas/> */}
-        <TerrariumCanvas/>
+        <TerrariumCanvas />
       </motion.div>
     </div>
   )
