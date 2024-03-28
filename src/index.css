@@ -31,6 +31,22 @@
   .computer-graphic {
     display: none;
   }
+
+  .works-cards {
+    min-height: 280px;
+  }
+
+  .works-body {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  .works-scroll {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
 }
 
 .monstera-bg {
