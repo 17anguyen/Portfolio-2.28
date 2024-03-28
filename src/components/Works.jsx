@@ -10,8 +10,8 @@ import HoverVideoPlayer from 'react-hover-video-player';
 
 const ProjectCard = ({ index, name, description, tags, image, video, source_code_link }) => {
   return (
-    <motion.div
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+    <div
+    // variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
     >
       <Tilt
         options={{
@@ -76,7 +76,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
         </div>
 
       </Tilt>
-    </motion.div >
+    </div>
   )
 }
 
@@ -97,9 +97,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div dir="ltr" className="works-scroll snap-mandatory snap-x overflow-x-auto mx-auto w-full flex p-[12px]">
+      <div dir="ltr" className="works-scroll">
         <div
-          className="works-body flex flex-row gap-12 nap-center h-[550px]">
+          className="works-body flex flex-row gap-12 h-[600px]">
           {projects.map((project, index) => (
             <ProjectCard
               key={`project-${index}`}
