@@ -32,11 +32,11 @@
   }
 
   .about-cards {
-    justify-items: space-evenly;
+    justify-content: space-evenly;
   }
 
   .about-card {
-    justify-items: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -50,6 +50,10 @@
   }
 
   .computer-graphic {
+    display: none;
+  }
+
+  .github-card {
     display: none;
   }
 
