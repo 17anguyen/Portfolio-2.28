@@ -12,7 +12,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-      >
+    >
       <Tilt
         options={{
           max: 45,
@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
       >
         <div className="glass-bg rounded-[20px] py-2 px-2 h-[500px]"
           onClick={() => window.open
-                  (source_code_link, "_blank")}>
+            (source_code_link, "_blank")}>
           <div
             className="w-full h-[230px] rounded-2xl">
             <HoverVideoPlayer
@@ -39,7 +39,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
                     height: '100%',
                     objectFit: 'cover',
                   }}
-                className="w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               }
               loadingOverlay={
@@ -50,7 +50,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
             />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
-     
+
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -98,18 +98,18 @@ const Works = () => {
       </div>
 
       <div dir="ltr" className="w-full flex snap-mandatory snap-x overflow-x-auto mx-auto p-12 pr-20 pl-20 ">
-      <div
-        className="flex flex-row gap-12 nap-center h-[500px]">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
-        ))}
+        <div
+          className="flex flex-row gap-12 nap-center h-[500px]">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={`project-${index}`}
+              index={index}
+              {...project}
+            />
+          ))}
 
-      </div>     
-</div>
+        </div>
+      </div>
     </>
   )
 }

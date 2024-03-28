@@ -26,8 +26,9 @@ const App = () => {
         <div>
           <Contact />
         </div>
+        <Footer />
         </div>
-      {/* <Footer /> */}
+
     </BrowserRouter>
   )
 }

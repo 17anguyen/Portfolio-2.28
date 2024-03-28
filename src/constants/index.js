@@ -36,7 +36,8 @@ import {
     helico,
     helicoPoster,
     zombie,
-    zombiePoster
+    zombiePoster,
+    github
 } from "../assets";
 
 export const navLinks = [
@@ -56,7 +57,7 @@ export const navLinks = [
 
 export const footerLinks = [
     {
-        icon: githublogo,
+        icon: github,
         name: "Github",
         URL: "https://github.com/17anguyen",
     },

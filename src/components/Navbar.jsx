@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import { pdf } from "../assets";
+import { github } from '../assets';
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
