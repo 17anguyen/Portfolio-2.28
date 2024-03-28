@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
         }}
         className='p-5 p-[1px] rounded-[20px]  sm:w-[360px] w-full'
       >
-        <div className="works-cards glass-bg rounded-[20px] py-2 px-2 h-[500px]"
+        <div className="works-cards glass-bg rounded-[20px] py-2 px-2 h-[600px]"
           onClick={() => window.open
             (source_code_link, "_blank")}>
           <div
@@ -97,9 +97,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div dir="ltr" className="works-scroll w-full flex snap-mandatory snap-x overflow-x-auto mx-auto p-12 pr-20 pl-20 ">
+      <div dir="ltr" className="works-scroll snap-mandatory snap-x overflow-x-auto mx-auto w-full flex p-[12px]">
         <div
-          className="works-body flex flex-row gap-12 nap-center h-[500px]">
+          className="works-body flex flex-row gap-12 nap-center h-[550px]">
           {projects.map((project, index) => (
             <ProjectCard
               key={`project-${index}`}
