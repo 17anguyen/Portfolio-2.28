@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-gradient p-[1px] rounded-[20px] shadow-card m-5'
+      className='w-full green-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
         options={{
@@ -45,13 +45,13 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>About Alivia.</h2>
       </motion.div>
       {/* card body */}
-      <div className=' xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+      <div className=' xl:mt-12 xl:flex-row flex-col-reverse flex'>
         {/* body text */}
         <div className='flex-[0.75] p-8'>
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
             className=
-            'flex flex-col text-secondary text-[17px] leading-[30px]'
+            'text-secondary text-[17px] leading-[30px] mx-auto'
           >
             I'm a web developer based in Seattle, Washington with a mastery with Javascript, and frameworks like React, Node.js, and Three.js.
             I collaborate closely with clients to create stunning, scalable, and user-friendly solutions to bring your vision to life.
@@ -72,7 +72,7 @@ const About = () => {
         </motion.div>
       </div>
 
-      <div className='justify-between mx-auto flex flex-wrap p-8'>
+      <div className='justify-between mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
