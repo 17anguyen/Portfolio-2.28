@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, video, source_code
         }}
         className='p-5 p-[1px] rounded-[20px]  sm:w-[360px] w-full'
       >
-        <div className="works-cards glass-bg rounded-[20px] py-2 px-2 h-[600px]"
+        <div className="works-cards glass-bg rounded-[20px] py-2 px-2 h-[550px]"
           onClick={() => window.open
             (source_code_link, "_blank")}>
           <div
