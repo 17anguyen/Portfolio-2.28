@@ -30,6 +30,14 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
+
+  .about-cards {
+    justify-items: space-evenly;
+  }
+
+  .about-card {
+    justify-items: space-between;
+  }
 }
 
 @media only screen and (max-width: 1026px) {

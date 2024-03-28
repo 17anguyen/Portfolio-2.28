@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="hero-image absolute xs:bottom-0 bottom-0 w-full flex justify-center items-center">
         <img
           src={portraitImage}
-          className='mx-auto'
+          className='mx-auto h-[55vh]'
           loading="lazy"
         />
       </div>
